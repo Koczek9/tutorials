@@ -1,6 +1,7 @@
 //    GL: gcc -o wayland-input wayland-input.c $(pkg-config --cflags --libs wayland-client wayland-egl glesv2 egl xkbcommon)
 // epoxy: gcc -DHAVE_EPOXY -o wayland-input wayland-input.c $(pkg-config --cflags --libs epoxy wayland-client wayland-egl xkbcommon)
 
+#define EGL_CONTEXT_MAJOR_VERSION                            0x3098
 
 #ifdef HAVE_EPOXY
 #  include <epoxy/egl.h>
